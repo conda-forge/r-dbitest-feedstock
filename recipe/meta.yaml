@@ -1,4 +1,4 @@
-{% set version = '1.7.3' %}
+{% set version = "1.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DBItest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DBItest/DBItest_{{ version }}.tar.gz
-  sha256: 30b7026378fedaec7e730fa4e242968dd70642f496457d7bf47d35e5c7ab891c
+  sha256: b45f1bcf1af5fc76342535f963c8bdbd0398efa9d9b92f7b1d37e2a4134a476e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
