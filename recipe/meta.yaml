@@ -1,4 +1,4 @@
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DBItest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DBItest/DBItest_{{ version }}.tar.gz
-  sha256: b45f1bcf1af5fc76342535f963c8bdbd0398efa9d9b92f7b1d37e2a4134a476e
+  sha256: c5978b58eefcc08028893d889804884bca11ee1f746337e222dfebaa5df1a3fe
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
